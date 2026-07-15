@@ -76,13 +76,13 @@ class SettingsFragment : PreferenceFragmentCompat(),
         findPreference<Preference>("app_version")?.summary = versionName
 
         findPreference<Preference>("github_repo")?.setOnPreferenceClickListener {
-            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/outofcontext/AndroidTVRemote"))
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/outofcontextapps/androidtvremote"))
             startActivity(intent)
             true
         }
 
         findPreference<Preference>("app_license")?.setOnPreferenceClickListener {
-            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/outofcontext/AndroidTVRemote/blob/main/LICENSE"))
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/outofcontextapps/androidtvremote/blob/main/LICENSE"))
             startActivity(intent)
             true
         }
