@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/castingProgressIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        app:trackColor="?attr/colorSurfaceContainerHigh"
+        app:indicatorColor="?attr/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/tv_dialog_casting_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_casting_progress"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        style="@style/TextAppearance.App.Body"
+        android:textColor="?attr/colorOnSurface"/>
+</LinearLayout>

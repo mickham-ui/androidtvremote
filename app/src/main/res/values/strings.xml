@@ -1,0 +1,83 @@
+<resources>
+    <string name="feedback_subject">Android TV Remote Feedback</string>
+    <string-array name="remote_layout_entries">
+        <item>Touchpad</item>
+        <item>D-Pad</item>
+    </string-array>
+    <string-array name="remote_layout_values">
+        <item>touchpad</item>
+        <item>dpad</item>
+    </string-array>
+    <string name="app_name">Android TV Remote</string>
+    <string name="title_home">Remote</string>
+    <string name="title_apps">Apps</string>
+    <string name="title_settings">Settings</string>
+    <string name="welcome">Welcome</string>
+    <string name="connect_title_search">Searching…</string>
+    <string name="settings">Settings</string>
+    <string name="appearance">Appearance</string>
+    <string name="app_updates">App updates</string>
+    <string name="subscribe_to_beta">Subscribe to beta updates</string>
+    <string name="check_for_updates">Check for updates…</string>
+    <string name="changelog">Changelog</string>
+    <string name="privacy_and_security">Privacy and security</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="license">License</string>
+    <string name="terms_of_service">Terms of service</string>
+    <string name="code_of_conduct">Code of conduct</string>
+    <string name="summary_preference_license" translatable="false">General Public License-3.0</string>
+    <string name="permissions">Permissions</string>
+    <string name="more">More</string>
+    <string name="feedback">Feedback</string>
+    <string name="share">Share</string>
+    <string name="more_apps">Rate us</string>
+    <string name="vibration_name">Vibration</string>
+    <string name="vibration_description_on">Vibrate when button is pressed</string>
+    <string name="vibration_description_off">No vibration when a button is pressed</string>
+    <string name="share_subject">Check out this free Android TV Remote app!</string>
+    <string name="share_using">Share using…</string>
+    <string name="discovering_devices">Looking for Android tv devices…</string>
+    <string name="ok">OK</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="turn_your_smartphone_into_a_powerful_fire_tv_remote_connect_seamlessly_over_wi_fi_and_enjoy_effortless_control_of_your_fire_tv_device">Turn your smartphone into a powerful Android TV remote! Connect seamlessly over Wi-Fi and enjoy effortless control of your Android TV device.</string>
+    <string name="browse_terms_of_service_and_privacy_policy_sum">Read and agree to our Terms of Service and Privacy Policy to continue.</string>
+    <string name="browse_terms_of_service_and_privacy_policy">Browse the <i><u>Terms of Service</u></i> and <i><u>Privacy Policy</u></i></string>
+    <string name="agree">Agree</string>
+<!--    Test AD-->
+    <string name="server_url">https://outofcontext.me/test/test.json</string>
+<!--    <string name="server_url">https://outofcontext.me/live/android_tv_remote.json</string>-->
+<!--    Live AD-->
+
+    <string name="test_device_id">EB46671689549F162FD792D653349B04</string>
+    <string name="contact_us">Feedback</string>
+    <string name="write_a_review">Share app</string>
+    <string name="rate_us">Rate us</string>
+    <string name="terms_of_use">Terms of use</string>
+    <string name="title_activity_main">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="audio_icon">Audio icon</string>
+    <string name="welcome_button">Continue</string>
+    <string name="welcome_description">Easily control your Android TV using Wi-Fi and enjoy a seamless remote experience.</string>
+    <string name="welcome_title">Control your Android TV from your Android device</string>
+    <string name="playing_notification_description">The playing notification provides actions for play/pause etc.</string>
+    <string name="playing_notification_name">Playing notification</string>
+    <string name="action_play_pause">Play/Pause</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="no_images_found">No Images Found</string>
+    <string name="no_images_description">There are no images available on your device</string>
+
+
+    <!-- Video strings -->
+    <string name="no_videos_found">No Videos Found</string>
+    <string name="no_videos_description">There are no videos available on your device</string>
+
+    <!-- Audio strings -->
+    <string name="no_audio_found">No Audio Files Found</string>
+    <string name="no_audio_description">There are no audio files available on your device</string>
+    <string name="dialog_casting_progress">Casting to Android TV...</string>
+
+</resources>

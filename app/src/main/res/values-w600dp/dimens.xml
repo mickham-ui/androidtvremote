@@ -1,0 +1,11 @@
+<resources>
+    <dimen name="fab_margin">48dp</dimen>
+    <dimen name="remote_padding">16dp</dimen>
+    <dimen name="card_corner_radius">36dp</dimen>
+    <dimen name="card_padding_vertical">16dp</dimen>
+    <dimen name="card_padding_horizontal">12dp</dimen>
+    <dimen name="button_min_size">72dp</dimen>
+    <dimen name="center_margin">12dp</dimen>
+
+
+</resources>

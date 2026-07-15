@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    res/drawable/splash_icon_animated.xml
+    Animated vector: TV screen draws on, then a wifi-style signal pulses out from it.
+    Used as the windowSplashScreenAnimatedIcon.
+-->
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+
+    <aapt:attr name="android:drawable">
+        <vector
+            android:width="108dp"
+            android:height="108dp"
+            android:viewportWidth="108"
+            android:viewportHeight="108">
+
+            <!-- TV body -->
+            <group android:name="tv_group"
+                android:pivotX="54"
+                android:pivotY="54"
+                android:scaleX="0.0"
+                android:scaleY="0.0">
+
+                <!-- Screen bezel -->
+                <path
+                    android:name="tv_bezel"
+                    android:pathData="M18,26 Q18,20 24,20 L84,20 Q90,20 90,26 L90,66 Q90,72 84,72 L24,72 Q18,72 18,66 Z"
+                    android:fillColor="@color/black"
+                    android:alpha="0.95"/>
+
+                <!-- Screen glass -->
+                <path
+                    android:pathData="M22,27 Q22,24 25,24 L83,24 Q86,24 86,27 L86,65 Q86,68 83,68 L25,68 Q22,68 22,65 Z"
+                    android:fillColor="#1565C0"
+                    android:alpha="0.9"/>
+
+                <!-- Stand left leg -->
+                <path
+                    android:pathData="M38,72 L34,86 L40,86 L44,72 Z"
+                    android:fillColor="@color/black"
+                    android:alpha="0.95"/>
+
+                <!-- Stand right leg -->
+                <path
+                    android:pathData="M70,72 L64,72 L68,86 L74,86 Z"
+                    android:fillColor="@color/black"
+                    android:alpha="0.95"/>
+
+                <!-- Base bar -->
+                <path
+                    android:pathData="M30,86 L78,86 Q80,86 80,88 L80,88 Q80,90 78,90 L30,90 Q28,90 28,88 L28,88 Q28,86 30,86 Z"
+                    android:fillColor="@color/black"
+                    android:alpha="0.8"/>
+
+            </group>
+
+            <!-- Signal arc 1 — inner -->
+            <group android:name="signal_1"
+                android:pivotX="54"
+                android:pivotY="46"
+                android:scaleX="0"
+                android:scaleY="0"
+                android:alpha="0">
+                <path
+                    android:pathData="M42,46 A12,12 0 0,1 66,46"
+                    android:strokeColor="#64B5F6"
+                    android:strokeWidth="3.5"
+                    android:strokeLineCap="round"
+                    android:fillColor="@android:color/transparent"/>
+            </group>
+
+            <!-- Signal arc 2 — middle -->
+            <group android:name="signal_2"
+                android:pivotX="54"
+                android:pivotY="46"
+                android:scaleX="0"
+                android:scaleY="0"
+                android:alpha="0">
+                <path
+                    android:pathData="M35,46 A19,19 0 0,1 73,46"
+                    android:strokeColor="#42A5F5"
+                    android:strokeWidth="3"
+                    android:strokeLineCap="round"
+                    android:fillColor="@android:color/transparent"/>
+            </group>
+
+            <!-- Signal arc 3 — outer -->
+            <group android:name="signal_3"
+                android:pivotX="54"
+                android:pivotY="46"
+                android:scaleX="0"
+                android:scaleY="0"
+                android:alpha="0">
+                <path
+                    android:pathData="M27,46 A27,27 0 0,1 81,46"
+                    android:strokeColor="#1E88E5"
+                    android:strokeWidth="2.5"
+                    android:strokeLineCap="round"
+                    android:fillColor="@android:color/transparent"/>
+            </group>
+
+            <!-- Center dot (wifi dot / remote pointer) -->
+            <group android:name="dot_group"
+                android:pivotX="54"
+                android:pivotY="46"
+                android:scaleX="0"
+                android:scaleY="0"
+                android:alpha="0">
+                <path
+                    android:pathData="M54,43 m-3,0 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0"
+                    android:fillColor="@color/white"/>
+            </group>
+
+        </vector>
+    </aapt:attr>
+
+    <!-- TV pops in with overshoot -->
+    <target android:name="tv_group">
+        <aapt:attr name="android:animation">
+            <set android:ordering="together">
+                <objectAnimator android:propertyName="scaleX"
+                    android:valueFrom="0.0" android:valueTo="1.0"
+                    android:duration="500" android:startOffset="0"
+                    android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY"
+                    android:valueFrom="0.0" android:valueTo="1.0"
+                    android:duration="500" android:startOffset="0"
+                    android:interpolator="@android:interpolator/overshoot"/>
+            </set>
+        </aapt:attr>
+    </target>
+
+    <!-- Dot appears after TV -->
+    <target android:name="dot_group">
+        <aapt:attr name="android:animation">
+            <set android:ordering="together">
+                <objectAnimator android:propertyName="alpha"
+                    android:valueFrom="0" android:valueTo="1"
+                    android:duration="200" android:startOffset="520"/>
+                <objectAnimator android:propertyName="scaleX"
+                    android:valueFrom="0" android:valueTo="1"
+                    android:duration="200" android:startOffset="520"
+                    android:interpolator="@android:interpolator/overshoot"/>
+                <objectAnimator android:propertyName="scaleY"
+                    android:valueFrom="0" android:valueTo="1"
+                    android:duration="200" android:startOffset="520"
+                    android:interpolator="@android:interpolator/overshoot"/>
+            </set>
+        </aapt:attr>
+    </target>
+
+    <!-- Signal arcs fan out with stagger -->
+    <target android:name="signal_1">
+        <aapt:attr name="android:animation">
+            <set android:ordering="together">
+                <objectAnimator android:propertyName="alpha"
+                    android:valueFrom="0" android:valueTo="1"
+                    android:duration="250" android:startOffset="650"/>
+                <objectAnimator android:propertyName="scaleX"
+                    android:valueFrom="0.2" android:valueTo="1"
+                    android:duration="300" android:startOffset="650"
+                    android:interpolator="@android:interpolator/decelerate_quad"/>
+                <objectAnimator android:propertyName="scaleY"
+                    android:valueFrom="0.2" android:valueTo="1"
+                    android:duration="300" android:startOffset="650"
+                    android:interpolator="@android:interpolator/decelerate_quad"/>
+            </set>
+        </aapt:attr>
+    </target>
+
+    <target android:name="signal_2">
+        <aapt:attr name="android:animation">
+            <set android:ordering="together">
+                <objectAnimator android:propertyName="alpha"
+                    android:valueFrom="0" android:valueTo="0.85"
+                    android:duration="250" android:startOffset="750"/>
+                <objectAnimator android:propertyName="scaleX"
+                    android:valueFrom="0.2" android:valueTo="1"
+                    android:duration="300" android:startOffset="750"
+                    android:interpolator="@android:interpolator/decelerate_quad"/>
+                <objectAnimator android:propertyName="scaleY"
+                    android:valueFrom="0.2" android:valueTo="1"
+                    android:duration="300" android:startOffset="750"
+                    android:interpolator="@android:interpolator/decelerate_quad"/>
+            </set>
+        </aapt:attr>
+    </target>
+
+    <target android:name="signal_3">
+        <aapt:attr name="android:animation">
+            <set android:ordering="together">
+                <objectAnimator android:propertyName="alpha"
+                    android:valueFrom="0" android:valueTo="0.7"
+                    android:duration="250" android:startOffset="850"/>
+                <objectAnimator android:propertyName="scaleX"
+                    android:valueFrom="0.2" android:valueTo="1"
+                    android:duration="300" android:startOffset="850"
+                    android:interpolator="@android:interpolator/decelerate_quad"/>
+                <objectAnimator android:propertyName="scaleY"
+                    android:valueFrom="0.2" android:valueTo="1"
+                    android:duration="300" android:startOffset="850"
+                    android:interpolator="@android:interpolator/decelerate_quad"/>
+            </set>
+        </aapt:attr>
+    </target>
+
+</animated-vector>

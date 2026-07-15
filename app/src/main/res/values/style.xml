@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomBottomNavigation" parent="Widget.Material3.BottomNavigationView">
+        <item name="itemIconTint">?attr/colorOnSurfaceVariant</item>
+        <item name="itemTextColor">?attr/colorOnSurfaceVariant</item>
+        <item name="itemActiveIndicatorStyle">@null</item>
+        <item name="itemRippleColor">?attr/colorPrimaryContainer</item>
+        <item name="android:background">?attr/colorSurface</item>
+    </style>
+
+    <style name="CustomBottomAppBar" parent="Widget.Material3.BottomAppBar">
+<!--        <item name="android:backgroundTint">@color/deepGray</item>-->
+    </style>
+    <!-- Switch for non-monet accents -->
+    <style name="CustomMaterialSwitch" parent="Widget.Material3.CompoundButton.MaterialSwitch">
+        <item name="thumbIconTint">?attr/colorPrimary</item>
+        <item name="trackDecorationTint">?attr/colorPrimary</item>
+    </style>
+
+    <!-- Preference dialog theme -->
+    <style name="ThemeOverlay.App.MaterialAlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="alertDialogStyle">@style/MaterialAlertDialog.App</item>
+        <item name="dialogCornerRadius">@dimen/rounded_corners</item>
+        <item name="android:background">@drawable/dialog_bg_monet</item>
+        <!-- Remove the accent-ish tint TODO Useless since every dialog has this tint now
+        <item name="backgroundTint">?colorBackgroundFloating</item>
+        <item name="android:background">?colorBackgroundFloating</item> -->
+    </style>
+
+    <!-- Note: shape appearance doesn't work with the preference dialogs (they're not material) -->
+    <style name="MaterialAlertDialog.App" parent="MaterialAlertDialog.Material3">
+        <item name="shapeAppearance">@style/ShapeAppearance.App.MediumComponent</item>
+        <item name="shapeAppearanceOverlay">@null</item>
+    </style>
+    <style name="ShapeAppearance.App.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerSize">@dimen/rounded_corners</item>
+    </style>
+
+
+    <style name="ShapeAppearance.App.TopRounded" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">28dp</item>
+        <item name="cornerSizeTopRight">28dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+
+
+
+
+
+
+    <style name="AppThemeButtonStyleCustom" parent="">
+        <item name="android:layout_height">@dimen/_50sdp</item>
+        <item name="android:layout_width">@dimen/_50sdp</item>
+        <item name="android:tint">@color/white</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="rippleEffect">
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="NoActionBar.AdAttribution" parent="@style/AppTheme">
+        <item name="android:textSize">@dimen/text_tiny2</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:background">#ccffcc66</item>
+        <item name="android:paddingLeft">@dimen/tiny_padding1</item>
+        <item name="android:paddingTop">@dimen/tiny_padding2</item>
+        <item name="android:paddingRight">@dimen/tiny_padding1</item>
+        <item name="android:paddingBottom">@dimen/tiny_padding2</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/ad_attribution</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+
+    <string name="ad_attribution">Ad</string>
+    <style name="ShapeAppearanceOverlay.MyApp.Button.Circle" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+
+    <style name="CommonMaterialButton" parent="Widget.MaterialComponents.Button.OutlinedButton.Icon">
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">0dp</item>
+        <item name="iconSize">24dp</item>
+        <item name="backgroundTint">?attr/colorSurfaceContainer</item>
+        <item name="iconTint">?attr/colorOnBackground</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MyApp.Button.Circle</item>
+    </style>
+
+    <!-- Add this to res/values/styles.xml or themes.xml -->
+    <style name="ShapeAppearance.SplashIcon.Rounded" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+    </style>
+
+
+
+</resources>

@@ -1,0 +1,16 @@
+<!-- item_folder.xml -->
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    style="@style/Widget.App.Card">
+
+    <TextView
+        android:id="@+id/textViewFolderName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        style="@style/TextAppearance.App.Title"
+        android:textColor="?attr/colorOnSurface"/>
+
+</com.google.android.material.card.MaterialCardView>

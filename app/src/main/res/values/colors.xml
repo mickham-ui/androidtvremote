@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Material You 3 — Green seed color palette
+    Generated from seed: #1B6E35 (Android Forest Green)
+
+    Light theme colors live here.
+    Dark theme overrides live in values-night/colors.xml.
+
+    DO NOT use @color/black or @color/white for foreground/background content.
+    Always use the ?attr/colorOnSurface / ?attr/colorOnBackground semantic tokens.
+    @color/black and @color/white below are kept only for special
+    non-themeable cases (e.g., animated vector drawables, splash icon fill).
+-->
+<resources>
+
+    <!-- ── Absolute primitives (only use in drawables / icons) ── -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- ── Shimmer ───────────────────────────────────────────── -->
+    <color name="shimmer_highlight_color">#C8E6C9</color>
+
+    <!-- ── Semantic / functional colors ──────────────────────── -->
+    <!-- Power icon: connected = green, disconnected = red -->
+    <color name="power_connected_green">#2E7D32</color>
+    <color name="power_disconnected_red">#C62828</color>
+
+    <!-- Voice button active state -->
+    <color name="voice_active_bg">#33388E3C</color>
+    <color name="voice_active_icon">#388E3C</color>
+
+    <!-- Button toggle state indicators (green-tuned) -->
+    <color name="btn_state_active_green">#2E7D32</color>
+    <color name="btn_state_mute_red">#B71C1C</color>
+    <color name="btn_state_default_grey">#78909C</color>
+    <color name="btn_bg_active_green">#2A2E7D32</color>
+    <color name="btn_bg_mute_red">#2AB71C1C</color>
+
+    <!-- Remote / D-Pad surface (adapts per mode via values-night) -->
+    <color name="dpadcolorPrimary">#E8F5E9</color>
+    <color name="remote_button_background">#C8E6C9</color>
+
+    <!-- Glow accents (transparent = off; override in code for glow effects) -->
+    <color name="expressive_glow_primary">#00000000</color>
+    <color name="expressive_glow_secondary">#00000000</color>
+    <color name="expressive_glow_tertiary">#00000000</color>
+
+    <!-- ── Material You 3 — LIGHT theme (Green seed #1B6E35) ── -->
+
+    <!-- Primary — Forest Green -->
+    <color name="md_theme_primary">#1B6E35</color>
+    <color name="md_theme_onPrimary">#FFFFFF</color>
+    <color name="md_theme_primaryContainer">#A8F5A8</color>
+    <color name="md_theme_onPrimaryContainer">#002109</color>
+
+    <!-- Secondary — Muted Sage -->
+    <color name="md_theme_secondary">#506353</color>
+    <color name="md_theme_onSecondary">#FFFFFF</color>
+    <color name="md_theme_secondaryContainer">#D3E8D3</color>
+    <color name="md_theme_onSecondaryContainer">#0D1F12</color>
+
+    <!-- Tertiary — Earthy Teal -->
+    <color name="md_theme_tertiary">#39656B</color>
+    <color name="md_theme_onTertiary">#FFFFFF</color>
+    <color name="md_theme_tertiaryContainer">#BCEBF1</color>
+    <color name="md_theme_onTertiaryContainer">#001F23</color>
+
+    <!-- Error -->
+    <color name="md_theme_error">#BA1A1A</color>
+    <color name="md_theme_onError">#FFFFFF</color>
+    <color name="md_theme_errorContainer">#FFDAD6</color>
+    <color name="md_theme_onErrorContainer">#93000A</color>
+
+    <!-- Background / Surface -->
+    <color name="md_theme_background">#F6FBF4</color>
+    <color name="md_theme_onBackground">#181D19</color>
+    <color name="md_theme_surface">#F6FBF4</color>
+    <color name="md_theme_onSurface">#181D19</color>
+    <color name="md_theme_surfaceVariant">#D8E5D8</color>
+    <color name="md_theme_onSurfaceVariant">#3D4D3E</color>
+
+    <!-- Outline -->
+    <color name="md_theme_outline">#6D7D6E</color>
+    <color name="md_theme_outlineVariant">#BCCCBD</color>
+
+    <!-- Scrim / Inverse -->
+    <color name="md_theme_scrim">#000000</color>
+    <color name="md_theme_inverseSurface">#2D322E</color>
+    <color name="md_theme_inverseOnSurface">#ECF2EB</color>
+    <color name="md_theme_inversePrimary">#8DD98A</color>
+
+    <!-- Fixed -->
+    <color name="md_theme_primaryFixed">#A8F5A8</color>
+    <color name="md_theme_onPrimaryFixed">#002109</color>
+    <color name="md_theme_primaryFixedDim">#8DD98A</color>
+    <color name="md_theme_onPrimaryFixedVariant">#005221</color>
+    <color name="md_theme_secondaryFixed">#D3E8D3</color>
+    <color name="md_theme_onSecondaryFixed">#0D1F12</color>
+    <color name="md_theme_secondaryFixedDim">#B6CCB7</color>
+    <color name="md_theme_onSecondaryFixedVariant">#394B3B</color>
+    <color name="md_theme_tertiaryFixed">#BCEBF1</color>
+    <color name="md_theme_onTertiaryFixed">#001F23</color>
+    <color name="md_theme_tertiaryFixedDim">#A0CED4</color>
+    <color name="md_theme_onTertiaryFixedVariant">#1E4D52</color>
+
+    <!-- Surface containers (light) -->
+    <color name="md_theme_surfaceDim">#D6DBD5</color>
+    <color name="md_theme_surfaceBright">#F6FBF4</color>
+    <color name="md_theme_surfaceContainerLowest">#FFFFFF</color>
+    <color name="md_theme_surfaceContainerLow">#F0F5EE</color>
+    <color name="md_theme_surfaceContainer">#EAEFE8</color>
+    <color name="md_theme_surfaceContainerHigh">#E4EAE3</color>
+    <color name="md_theme_surfaceContainerHighest">#DEE4DD</color>
+
+</resources>

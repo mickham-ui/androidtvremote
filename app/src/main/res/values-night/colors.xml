@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Material You 3 — Green seed — DARK theme overrides
+    All color names must match the light counterparts in values/colors.xml.
+-->
+<resources>
+
+    <!-- ── Primitives that invert in dark mode ─────────────── -->
+    <!-- @color/black is used in drawables/icons; in dark mode it becomes white -->
+    <color name="black">#FFFFFFFF</color>
+    <color name="shimmer_highlight_color">#2E4A32</color>
+
+    <!-- Power icon -->
+    <color name="power_connected_green">#81C784</color>
+    <color name="power_disconnected_red">#EF9A9A</color>
+
+    <!-- Remote / D-Pad surface (dark) -->
+    <color name="dpadcolorPrimary">#1A2B1C</color>
+    <color name="remote_button_background">#1B3320</color>
+
+    <!-- ── Material You 3 — DARK theme (Green seed #1B6E35) ── -->
+
+    <!-- Primary -->
+    <color name="md_theme_primary">#8DD98A</color>
+    <color name="md_theme_onPrimary">#003A13</color>
+    <color name="md_theme_primaryContainer">#005221</color>
+    <color name="md_theme_onPrimaryContainer">#A8F5A8</color>
+
+    <!-- Secondary -->
+    <color name="md_theme_secondary">#B6CCB7</color>
+    <color name="md_theme_onSecondary">#223427</color>
+    <color name="md_theme_secondaryContainer">#394B3B</color>
+    <color name="md_theme_onSecondaryContainer">#D3E8D3</color>
+
+    <!-- Tertiary -->
+    <color name="md_theme_tertiary">#A0CED4</color>
+    <color name="md_theme_onTertiary">#00363B</color>
+    <color name="md_theme_tertiaryContainer">#1E4D52</color>
+    <color name="md_theme_onTertiaryContainer">#BCEBF1</color>
+
+    <!-- Error -->
+    <color name="md_theme_error">#FFB4AB</color>
+    <color name="md_theme_onError">#690005</color>
+    <color name="md_theme_errorContainer">#93000A</color>
+    <color name="md_theme_onErrorContainer">#FFDAD6</color>
+
+    <!-- Background / Surface -->
+    <color name="md_theme_background">#0F1510</color>
+    <color name="md_theme_onBackground">#DEE4DD</color>
+    <color name="md_theme_surface">#0F1510</color>
+    <color name="md_theme_onSurface">#DEE4DD</color>
+    <color name="md_theme_surfaceVariant">#3D4D3E</color>
+    <color name="md_theme_onSurfaceVariant">#BCCCBD</color>
+
+    <!-- Outline -->
+    <color name="md_theme_outline">#879688</color>
+    <color name="md_theme_outlineVariant">#3D4D3E</color>
+
+    <!-- Scrim / Inverse -->
+    <color name="md_theme_scrim">#000000</color>
+    <color name="md_theme_inverseSurface">#DEE4DD</color>
+    <color name="md_theme_inverseOnSurface">#2D322E</color>
+    <color name="md_theme_inversePrimary">#1B6E35</color>
+
+    <!-- Fixed -->
+    <color name="md_theme_primaryFixed">#A8F5A8</color>
+    <color name="md_theme_onPrimaryFixed">#002109</color>
+    <color name="md_theme_primaryFixedDim">#8DD98A</color>
+    <color name="md_theme_onPrimaryFixedVariant">#005221</color>
+    <color name="md_theme_secondaryFixed">#D3E8D3</color>
+    <color name="md_theme_onSecondaryFixed">#0D1F12</color>
+    <color name="md_theme_secondaryFixedDim">#B6CCB7</color>
+    <color name="md_theme_onSecondaryFixedVariant">#394B3B</color>
+    <color name="md_theme_tertiaryFixed">#BCEBF1</color>
+    <color name="md_theme_onTertiaryFixed">#001F23</color>
+    <color name="md_theme_tertiaryFixedDim">#A0CED4</color>
+    <color name="md_theme_onTertiaryFixedVariant">#1E4D52</color>
+
+    <!-- Surface containers (dark) -->
+    <color name="md_theme_surfaceDim">#0F1510</color>
+    <color name="md_theme_surfaceBright">#343B35</color>
+    <color name="md_theme_surfaceContainerLowest">#0A0F0B</color>
+    <color name="md_theme_surfaceContainerLow">#181D19</color>
+    <color name="md_theme_surfaceContainer">#1C221D</color>
+    <color name="md_theme_surfaceContainerHigh">#262D27</color>
+    <color name="md_theme_surfaceContainerHighest">#313832</color>
+
+</resources>

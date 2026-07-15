@@ -1,0 +1,129 @@
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <!-- Theme -->
+    <androidx.preference.PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="Appearance">
+
+        <com.out.androidtvremote.ui.frags.settings.ThemePreference
+            app:key="app_theme"
+            app:iconSpaceReserved="false" />
+
+    </androidx.preference.PreferenceCategory>
+
+    <!-- Remote Customization -->
+    <androidx.preference.PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="Remote Customization">
+
+        <com.out.androidtvremote.ui.frags.settings.RemoteLayoutPreference
+            app:key="default_remote_layout"
+            app:iconSpaceReserved="false" />
+
+        <androidx.preference.Preference
+            app:key="quick_access_apps"
+            app:iconSpaceReserved="false"
+            app:title="Quick Access Apps"
+            app:summary="Choose which apps show in Quick Access and reorder them" />
+
+    </androidx.preference.PreferenceCategory>
+    <!-- Connection -->
+    <androidx.preference.PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="Connection">
+
+        <androidx.preference.SwitchPreferenceCompat
+            app:key="auto_reconnect"
+            app:iconSpaceReserved="false"
+            app:title="Auto Connect"
+            app:summary="Automatically connect to the previously paired device on startup"
+            app:defaultValue="true" />
+
+    </androidx.preference.PreferenceCategory>
+
+    <!-- Guide -->
+    <androidx.preference.PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="Guide">
+
+        <androidx.preference.Preference
+            app:key="connect_guide"
+            app:iconSpaceReserved="false"
+            app:title="How to Connect"
+            app:summary="Make sure your Android TV and phone are on the same Wi-Fi network. Enable network remote control in your TV settings." />
+
+    </androidx.preference.PreferenceCategory>
+
+    <!-- More -->
+    <androidx.preference.PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="@string/more">
+
+        <androidx.preference.Preference
+            app:iconSpaceReserved="false"
+            app:key="feedback"
+            app:title="@string/feedback" />
+
+        <androidx.preference.Preference
+            app:iconSpaceReserved="false"
+            app:key="share"
+            app:title="@string/share" />
+
+        <androidx.preference.Preference
+            app:iconSpaceReserved="false"
+            app:key="rate_us"
+            app:title="@string/more_apps" />
+
+    </androidx.preference.PreferenceCategory>
+
+    <!-- Privacy & Security -->
+    <androidx.preference.PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="@string/privacy_and_security">
+
+        <androidx.preference.Preference
+            app:iconSpaceReserved="false"
+            app:title="@string/privacy_policy">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://outofcontext.me/remotto/privacy/" />
+        </androidx.preference.Preference>
+
+    </androidx.preference.PreferenceCategory>
+
+    <!-- Open Source -->
+    <androidx.preference.PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="Open Source">
+
+        <androidx.preference.Preference
+            app:key="open_source_info"
+            app:iconSpaceReserved="false"
+            app:selectable="false"
+            app:title="Completely Free &amp; Open Source"
+            app:summary="This application is now completely free and open-source. All features are available without ads or subscriptions. Thank you for using and supporting this project!" />
+
+        <androidx.preference.Preference
+            app:key="github_repo"
+            app:iconSpaceReserved="false"
+            app:title="GitHub Repository"
+            app:summary="View the source code, contribute, or report an issue." />
+
+        <androidx.preference.Preference
+            app:key="app_license"
+            app:iconSpaceReserved="false"
+            app:title="License"
+            app:summary="Released under the MIT License." />
+
+        <androidx.preference.Preference
+            app:key="app_version"
+            app:iconSpaceReserved="false"
+            app:selectable="false"
+            app:title="Version" />
+
+    </androidx.preference.PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>
