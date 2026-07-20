@@ -18,7 +18,7 @@
 
 <br/>
 
-> **100% Free · No Ads · No Subscriptions · Open Source**
+> **100% Free · No Subscriptions · Open Source**
 
 </div>
 
